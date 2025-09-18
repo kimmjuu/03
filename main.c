@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
-    int input_int;
-    float input_float;
+    char c;
+    int i;
 
-    printf("Enter an integer : ");
-    scanf("%d", &input_int);
+    printf("input a number : ");
+    scanf("%c", &c);
 
-    printf("Enter a float : ");
-    scanf("%f", &input_float);
+    i = c - '0'; 
 
-    printf("integer : %d, float : %f\n", input_int, input_float);
+    printf("The input number is %i\n", i);
 
     return 0;
 }
