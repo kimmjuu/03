@@ -1,14 +1,18 @@
 #include <stdio.h>
 
 int main(void) {
-    char c;
-    
-    printf("enter a character : ");
-    scanf("%c", &c);
+    int a, b;
+    float result;
 
-    char next = c + 1;
+    printf("Enter numerator: "); //한글 작성 시 커맨더 창에서 글꼴 깨짐이 발생하여 영문으로 작성합니다
+    scanf("%d", &a);
 
-    printf("The next character of %c (%d) is %c (%d)\n", c, c, next, next);
+    printf("Enter denominator: ");
+    scanf("%d", &b);
+
+    result = (float)a / b;
+
+    printf("The result of division is %f\n", result);
 
     return 0;
 }
